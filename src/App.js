@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './component/Navbar';
 import TextForms from './component/TextForms';
-import About from './component/About';
-
-
-// import LinearGradient from 'react-native-linear-gradient';
-// import './styles.css';
-
+// import About from './component/About';
 
 function App() {
   const [mode,setMode] = useState('light')
@@ -46,7 +41,7 @@ function App() {
         <Navbar title="textutils" mode={mode} toggleblueMode={toggleblueMode} togglegreenMode={togglegreenMode}/>
         <div className='container my-3'>
           <TextForms heading="Enter Details" mode={mode} />
-          <About />
+          
         </div>
     </>
   );
